@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagens/Logo-Alura.png">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="logo" src="./imagens/Logo-Alura.png" alt="Logo da Alura" onclick="btnReset()">
+        </div>
+    </header>
+    <main>
+        <section id="code-input">
+            <textarea name="" id="input-message" placeholder="Digite sua mensagem aqui..." required></textarea>
+
+            <div id="code-buttons">
+                <div id="warning">
+                    <img src="./imagens/info.png" alt=""> <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <div class="buttons">
+                    <button onclick="btnEncode()">Criptografar</button> <button onclick="btnDecode()">Descriptografar</button>    
+                </div>  
+            </div>
+        </section>
+
+        <section id="code-output">
+                <div id="nocode">
+                    <h3 class="output-item">Nenhuma mensagem encontrada.</h3>
+                    <p class="output-item">Digite o texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div id="withcode" style="display:none" >
+                    <textarea name="" id="output-message"></textarea>
+                    <button onclick="btnCopy()">Copiar</button>
+                </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por Amanda Marques.</p>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/amandacavalcantimarques/" target="_blank">
+                    <img src="./imagens/logo-linkedin.png" alt="Ícone LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a src="" href="https://github.com/Mendasz" target="_blank">
+                    <img src="./imagens/logo-github.png" alt="Ícone Github">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
